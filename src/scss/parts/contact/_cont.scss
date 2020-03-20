@@ -1,0 +1,193 @@
+.cont {
+    padding-top: 60px;
+
+    &__container {
+        padding-top: 65px;
+    }
+
+    &__title {
+        margin-bottom: 64px;
+        font-size: 30px;
+        line-height: 30px;
+        text-align:center;
+    }
+
+    &__box {
+        margin-bottom: 55px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__contact {
+        width: 54%;
+
+        &-img {
+            height: 446px;
+            margin-bottom: 40px;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-left,
+        &-right {
+            width: 49%;
+        }
+
+        &-item {
+
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+        }
+
+        &-name {
+            margin-bottom: 4px;
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #897358;
+
+            
+        }
+
+        &-value {
+            font-family: $play-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 28px;
+            color: #333333;
+        }
+    }
+
+    &__form {
+        width: 40%;
+
+        &-item {
+            position: relative;
+
+            &:not(:last-child) {
+                margin-bottom: 26px;
+            }
+
+            &:last-child {
+                margin-bottom: 32px;
+            }
+        }
+
+        &-name {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-family: $play-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            color: #333333;
+
+            span {
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                color: #767676;
+            }
+        }
+
+        &-value {
+            position: relative;
+            width: 100%;
+            padding: 15px;
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #767676;
+            background: #F7F9FB;
+        }
+
+        &-button {
+
+            input {
+                padding: 20px 60px;
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                background: #101217;
+
+                &:hover {
+                    background: $color-brown;
+                }
+            }
+        }
+
+        &-textarea {
+            padding: 30px;
+            height: 258px;
+            resize: none;
+            text-align: justify;
+        }
+    }
+
+    &__map {
+        height: 583px;
+        margin-bottom: 60px;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .cont {
+
+        &__box {
+            flex-direction: column;
+        }
+
+        &__contact {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        &__form {
+            width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 577px) {
+    .cont {
+
+        &__contact {
+
+            &-wrap {
+                flex-direction: column;
+            }
+
+            &-left {
+                margin-bottom: 24px;
+                width: 100%;
+            }
+
+            &-right {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+// common
+@import 'common/variables';
+@import 'common/main';
+
+// Elements
+@import 'elements/pagination';
+@import 'elements/popup';
+
+// Parts
+
+// Main
+@import 'parts/main/header';
+@import 'parts/main/hero';
+@import 'parts/main/desc';
+@import 'parts/main/company';
+@import 'parts/main/project';
+@import 'parts/main/blog';
+@import 'parts/main/contact';
+
+// About
+@import 'parts/about/a-hero';
+@import 'parts/about/a-desc';
+@import 'parts/about/a-services';
+@import 'parts/about/a-example';
+@import 'parts/about/a-concept';
+@import 'parts/about/a-control';
+@import 'parts/about/a-manager';
+@import 'parts/about/a-adventure';
+@import 'parts/about/a-progress';
+@import 'parts/about/a-knowing';
+@import 'parts/about/a-contact';
+
+// Page
+@import 'parts/page/p-hero';
+@import 'parts/page/p-article';
+@import 'parts/page/p-comment';
+
+// Project
+@import 'parts/project/p-project';
+
+// Blog
+@import 'parts/blog/b-blog';
+
+// Case
+@import 'parts/case/c-hero';
+@import 'parts/case/task';
+
+// Contact
+@import 'parts/contact/cont';

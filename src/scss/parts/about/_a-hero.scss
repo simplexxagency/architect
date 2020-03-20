@@ -1,0 +1,137 @@
+.a-hero {
+    position: relative;
+    padding-top: 60px;
+    margin-bottom: 170px;
+    // height: 100vh;
+
+    &__img {
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 33%,rgba(255,255,255,0) 100%);
+        }
+
+        img {
+            height: 100vh;
+            object-fit: cover;
+        }
+    }
+
+    &__desc {
+        width: 460px;
+        position: absolute;
+        bottom: 75px;
+        right: 122px;
+    }
+
+    &__text {
+        line-height: 27px;
+        text-align: justify;
+
+        span,
+        span:first-child {
+            color: $color-white;
+            font-family: $main-font;
+            font-size: $medium-size;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 8px;
+        text-align: right;
+    }
+
+    &__title {
+        margin-bottom: 27px;
+        color: $color-white;
+        white-space: nowrap;
+    }
+
+    &__text {
+        color: $color-white;
+    }
+}
+
+@media all and (min-width: 1440px) {
+    .a-hero {
+
+        &__container {
+            width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .a-hero {
+
+        &__desc {
+            right: 40px;
+            bottom: 20px;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .a-hero {
+        margin-bottom: 25px;
+
+        &__container {
+            margin-bottom: 40px;
+        }
+
+        &__img {
+
+            img {
+                height: inherit;
+                object-fit: unset;
+            }
+        }
+
+        &__desc {
+            position: static;
+            width: 100%;
+            padding: 0 30px;
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
+
+        &__title {
+            color: $color-main;
+            text-align: center;
+        }
+
+        &__text {
+
+            span,
+            span:first-child {
+                display: block;
+                margin-bottom: 20px;
+                color: $color-main;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 575px) {
+    .a-hero {
+        padding-top: 60px;
+
+        &__title {
+            white-space: unset;
+            font-size: 24px;
+        }
+    }
+}

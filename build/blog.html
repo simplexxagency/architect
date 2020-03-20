@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www/w3/org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Fullpage.js -->
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header nav-fixed ">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row row-visible">
+                    <div class="header__container">
+                        <div class="header__lang d-none d-md-block">
+                            <div class="header__lang-ru active">ру
+                                <span class="header__lang-tooltip">eng</span>
+                            </div>
+                            <div class="header__lang-eng">eng
+                                <span class="header__lang-tooltip">ru</span>
+                            </div>
+                        </div>
+                        <div class="header__logo">
+                            <img src="img/Logo.svg" alt="logo">
+                        </div>
+                        <div class="header__menu-btn">
+                            <span class="d-none d-sm-block">Меню</span>
+                            <span class="passive">Свернуть</span>
+                            <div class="header__menu-icon">
+                                <div class="header__menu-line"></div>
+                                <div class="header__menu-line"></div>
+                                <div class="header__menu-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row row-collapsed">
+
+                    <ul class="header__menu-list">
+                        <li class="header__lang-mobile d-flex d-md-none">
+                            <div class="header__lang-item">
+                                <a href="#">рус</a>
+                            </div>
+                            <div class="header__lang-item">
+                                <a href="#">Eng</a>
+                            </div>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Проекты</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Блог</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="header__menu-item header__menu-media d-flex d-md-none">
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Pinterest</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+
+        <!-- B-blog -->
+        <section class="b-blog">
+            <div class="container">
+                <div class="b-blog__container">
+                    <div class="b-blog__container-header">
+                        <div class="b-blog__container-title">
+                            Блог
+                        </div>
+                    </div>
+                    <div class="b-blog__container-main">
+                        <div class="b-blog__box">
+                            <div class="b-blog__card">
+                                <a href="#">
+                                    <div class="b-blog__img">
+                                        <img src="img/blog-img-1.png" alt="image">
+                                    </div>
+                                    <div class="b-blog__desc">
+                                        <div class="b-blog__title title">
+                                            <span>Квартира-трансформер: 16 кв. метров в тренде micro-living</span>
+                                        </div>
+                                        <div class="b-blog__date date d-none d-sm-block">
+                                            24 августа 2019
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="b-blog__card">
+                                <a href="#">
+                                    <div class="b-blog__img">
+                                        <img src="img/blog-img-2.png" alt="image">
+                                    </div>
+                                    <div class="b-blog__desc">
+                                        <div class="b-blog__title title">
+                                            <span>Smart Life: 5 устройств, которые повышают комфорт жизни</span>
+                                        </div>
+                                        <div class="b-blog__date date d-none d-sm-block">
+                                            24 августа 2019
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="b-blog__card">
+                                <a href="#">
+                                    <div class="b-blog__img">
+                                        <img src="img/blog-img-3.png" alt="image">
+                                    </div>
+                                    <div class="b-blog__desc">
+                                        <div class="b-blog__title title">
+                                            <span> Kapsimalis Architects: летняя резиденция на Санторини</span>
+                                        </div>
+                                        <div class="b-blog__date date d-none d-sm-block">
+                                            24 августа 2019
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="b-blog__card">
+                                <a href="#">
+                                    <div class="b-blog__img">
+                                        <img src="img/blog-img-1.png" alt="image">
+                                    </div>
+                                    <div class="b-blog__desc">
+                                        <div class="b-blog__title title">
+                                            <span>Квартира-трансформер: 16 кв. метров в тренде micro-living</span>
+                                        </div>
+                                        <div class="b-blog__date date d-none d-sm-block">
+                                            24 августа 2019
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="b-blog__hide">
+                            <div class="b-blog__card">
+                                <div class="b-blog__img">
+                                    <img src="img/blog-img-1.png" alt="image">
+                                </div>
+                                <div class="b-blog__desc">
+                                    <div class="b-blog__title title">
+                                        Квартира-трансформер: 16 кв. метров в тренде micro-living
+                                    </div>
+                                    <div class="b-blog__date date d-none d-sm-block">
+                                        24 августа 2019
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-blog__card">
+                                <div class="b-blog__img">
+                                    <img src="img/blog-img-2.png" alt="image">
+                                </div>
+                                <div class="b-blog__desc">
+                                    <div class="b-blog__title title">
+                                        Smart Life: 5 устройств, которые повышают комфорт жизни
+                                    </div>
+                                    <div class="b-blog__date date d-none d-sm-block">
+                                        24 августа 2019
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-blog__card">
+                                <div class="b-blog__img">
+                                    <img src="img/blog-img-3.png" alt="image">
+                                </div>
+                                <div class="b-blog__desc">
+                                    <div class="b-blog__title title">
+                                        Kapsimalis Architects: летняя резиденция на Санторини
+                                    </div>
+                                    <div class="b-blog__date date d-none d-sm-block">
+                                        24 августа 2019
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-blog__card">
+                                <div class="b-blog__img">
+                                    <img src="img/blog-img-1.png" alt="image">
+                                </div>
+                                <div class="b-blog__desc">
+                                    <div class="b-blog__title title">
+                                        Квартира-трансформер: 16 кв. метров в тренде micro-living
+                                    </div>
+                                    <div class="b-blog__date date d-none d-sm-block">
+                                        24 августа 2019
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-blog__container-button button">
+                        <a href="javascript:void(0)">
+                            Показать еще
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End B-blog -->
+
+    </main>
+    <!-- End Main -->
+
+    <!-- Instagram -->
+    <div class="contact__instagram p-contact__instagram">
+        <div class="p-contact__title subtitle">
+            <span class="d-none d-sm-block ">
+                Следите за нами в Instagram
+            </span>
+            <span class="d-block d-sm-none">Мы в instagram</span>
+
+        </div>
+        <div class="contact__images p-contact__images row">
+            <div class="contact__img col-4 col-sm">
+                <a href="#">
+                    <img src="img/main-img-4.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+
+            </div>
+            <div class="contact__img col-4 col-sm">
+                <a href="#">
+                    <img src="img/main-img-10.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm">
+                <a href="#">
+                    <img src="img/main-img-5.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm">
+                <a href="#">
+                    <img src="img/main-img-6.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm">
+                <a href="#">
+                    <img src="img/main-img-7.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm">
+                <a href="#">
+                    <img src="img/main-img-8.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm-auto d-block d-sm-none">
+                <a href="#">
+                    <img src="img/main-img-8.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm-auto d-block d-sm-none">
+                <a href="#">
+                    <img src="img/main-img-8.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm-auto d-block d-sm-none">
+                <a href="#">
+                    <img src="img/main-img-8.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Instagram -->
+
+    <!-- Footer -->
+    <footer class="footer p-footer">
+
+        <div class="footer__rights">
+            <div class="footer__subtitle">
+                Bastrichev Architects
+            </div>
+            <div class="footer__copyrights">
+                &#169 Все права защищены 2018
+            </div>
+        </div>
+        <div class="footer__links d-none d-md-flex">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="subtitle">Facebook</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="subtitle">Instagram</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="subtitle">Pinterest</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__agency">
+            <span>Сайт разработан</span>
+
+            <span>KRAB Marketing Agency</span>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!-- Fullpage.js -->
+    <script src="js/jquery.fullpage.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

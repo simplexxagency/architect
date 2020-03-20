@@ -1,0 +1,271 @@
+
+// TT Norms Fonts
+@font-face {
+    font-family: 'tt_normsblack';
+    src: url('../fonts/TTNorms/ttnorms-black-webfont.woff2') format('woff2'),
+         url('../fonts/TTNorms/ttnorms-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tt_normsbold';
+    src: url('../fonts/TTNorms/ttnorms-bold-webfont.woff2') format('woff2'),
+         url('../fonts/TTNorms/ttnorms-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tt_normsmedium_italic';
+    src: url('../fonts/TTNorms/ttnorms-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/TTNorms/ttnorms-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'tt_normsmedium';
+    src: url('../fonts/TTNorms/ttnorms-medium-webfont.woff2') format('woff2'),
+         url('../fonts/TTNorms/ttnorms-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tt_normsregular';
+    src: url('../fonts/TTNorms/ttnorms-regular-webfont.woff2') format('woff2'),
+         url('../fonts/TTNorms/ttnorms-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tt_normslight';
+    src: url('../fonts/TTNorms/ttnorms-light-webfont.woff2') format('woff2'),
+         url('../fonts/TTNorms/ttnorms-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body, html {
+    width: 100vw;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    flex-direction: column;
+}
+
+body.active,
+html.active {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0;
+    background: transparent;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main-font;
+    font-size: $main-size;
+}
+
+img {
+    width: 100%;
+}
+
+input, select, textarea {
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    line-height: normal;
+}
+
+.title {
+    font-family: $play-font;
+    font-size: $big-size;
+    color: $color-black;
+}
+
+.subtitle {
+    color: $color-brown;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+.text {
+    font-size: $medium-size;
+    text-align: justify;
+
+    span:first-child {
+        color: $color-brown;
+        font-family: $play-font;
+        font-size: 30px;
+    }
+}
+
+.button {
+
+    a {
+        display: inline-block;
+        padding: 10px 45px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-white;
+        background-color: #101217;
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+            background-color: $color-brown;
+            text-decoration: none;
+        }
+    }
+}
+
+.button-invert {
+
+    a {
+        display: inline-block;
+        padding: 10px 45px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-brown;
+        background-color: $color-white;
+        border: 1px solid rgba(137, 115, 88, 0.4);
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+            background-color: $color-black;
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+
+    
+}
+
+.video-button {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+
+    &:hover {
+        width: 97px;
+        height: 97px;
+        // transition: all ease 1s;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        transform: translateX(2px);
+        border-left: $color-brown 11px solid;
+        border-top: 7px solid transparent;
+        border-right: 0;
+        border-bottom: 7px solid transparent;
+    }
+}
+
+.date {
+    letter-spacing: 2px;
+    color: $color-main;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+label.input_error {
+    position: absolute;
+    z-index: 2;
+    bottom: -40px;
+    right: 0;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px;
+    color: #20262D !important;
+    background: #FEDF01;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 2px; }
+
+label.input_error:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    margin-left: -5px;
+    -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.06);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #FEDF01 transparent; }
+
+@media all and (max-width: 575px) {
+    .text {
+    
+        span:first-child {
+            color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+        }
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}
+
+button.gm-ui-hover-effect {
+    display: none !important;
+}
+
+.gm-style .gm-style-iw-t::after {
+    display: none;
+}
+
+.gm-style .gm-style-iw-c {
+    background-color: transparent;
+    top: 47px;
+    left: 85px;
+    box-shadow: unset;
+}
+
+.gm-style .gm-style-iw-d {
+    overflow: unset !important;
+}
+
+.contact__map-popup {
+    font-size: 14px;
+}

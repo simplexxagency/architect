@@ -1,0 +1,7 @@
+.a-hero {
+  position: relative; }
+  .a-hero__desc {
+    width: 450px;
+    position: absolute;
+    bottom: 30px;
+    right: 50px; }

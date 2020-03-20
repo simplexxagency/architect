@@ -1,0 +1,39 @@
+.a-control {
+    padding: 121px 0;
+    margin-bottom: 166px;
+    background-color: rgba(137, 115, 88, 0.1);
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__text {
+        width: 730px;
+        margin-bottom: 37px;
+        line-height: 23px;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .a-control {
+        padding: 70px 0;
+        margin-bottom: 70px;
+
+        &__video {
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+@media all and (max-width: 575px) {
+    .a-control {
+        padding: 40px 0;
+        margin-bottom: 40px;
+
+        &__video {
+            margin-bottom: 16px;
+        }
+    }
+}

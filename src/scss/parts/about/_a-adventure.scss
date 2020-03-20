@@ -1,0 +1,146 @@
+.a-adventure {
+    margin-bottom: 106px;
+
+    &__container {
+        margin-bottom: 131px;
+    }
+
+    &__title {
+        padding-right: 62px;
+        position: relative;
+        top: -9px;
+        line-height: 41px;
+        text-align: right;
+        letter-spacing: 0.2px;
+    }
+
+    &__wrap {
+        margin-right: 61px;
+        padding-right: 30px;
+        height: 245px;
+        overflow-y: scroll;
+    }
+
+    &__text {
+
+        p {
+            line-height: 24px;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 22px;
+        }
+    }
+
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        cursor: pointer;
+    }
+    
+    ::-webkit-scrollbar:vertical {
+        width: 3px;
+        cursor: pointer;
+    }
+    
+    ::-webkit-scrollbar-thumb:vertical {
+        background-color: $color-brown;
+        cursor: pointer;
+    }
+
+    ::-webkit-scrollbar-track-piece:vertical  {
+        background-color: #bdbdbd;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+    
+    ::-webkit-scrollbar-track:vertical  {
+        border-radius: 10px;  
+        background-color: #000; 
+        cursor: pointer;
+    }
+
+    &__video {
+
+        &-button {
+            background-color: rgba(255, 255, 255, 0.66);
+        }
+    }
+
+    &__button {
+        text-align: center;
+
+        a {
+            font-size: $main-size;
+            color: $color-black;
+            background-color: $color-white;
+            border: 1px solid rgba(16, 18, 23, 0.24);
+            
+            &:hover {
+                background-color: $color-black;
+                color: $color-white;
+            }
+        }
+        
+    }
+
+    &__box {
+        display: none;
+        margin-bottom: 30px;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .a-adventure {
+        margin-bottom: 70px;
+
+        &__container {
+            margin-bottom: 70px;
+        }
+
+        &__title {
+            text-align: center;
+            padding-right: 0;
+            margin-bottom: 30px;
+        }
+
+        &__wrap {
+            margin-right: 0;
+            padding-right: 0;
+        }
+    }
+} 
+
+@media all and (max-width: 767px) {
+    .a-adventure {
+
+        &__wrap {
+            height: inherit;
+            overflow-y: inherit;
+        }
+    }
+}
+
+@media all and (max-width: 575px) {
+    .a-adventure {
+        margin-bottom: 40px;
+
+        &__container {
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            line-height: 32px;
+        }
+
+        &__text {
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

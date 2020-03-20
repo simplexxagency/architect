@@ -1,0 +1,113 @@
+.a-progress {
+    margin-bottom: 113px;
+
+    &__container {
+        padding-top: 105px;
+    }
+
+    &__title {
+        margin-bottom: 26px;
+        letter-spacing: 0;
+    }
+
+    &__text {
+
+        p:not(:last-child) {
+            margin-bottom: 21px;
+        }
+
+        a {
+            font-family: $ttm-italic, sans-serif;
+            padding-bottom: 1px;
+            color: #897358;
+            border-bottom: 1px solid #e3ded7;
+
+            &:hover {
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__wrap {
+        padding-left: 72px;
+    }
+
+    &__ring {
+        position: relative;
+        width: 435px;
+        height: 480px;
+        border-radius: 0 0 500em 500em;
+        overflow: hidden;
+
+        &:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            width: 435px;
+            height: 435px;
+            border-radius: 50%;
+            background-color: $color-brown; 
+            
+        }
+    }
+
+    &__img {
+        width: 335px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .a-progress {
+
+        &__wrap {
+            padding-left: 20px;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .a-progress {
+        margin-bottom: 70px;
+
+        &__container {
+            padding-top: 0;
+        }
+
+        &__wrap {
+            padding-right: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__title {
+            text-align: center;
+        }
+    }
+}
+
+@media all and (max-width: 575px) {
+    .a-progress {
+        margin-bottom: 40px;
+
+        &__ring {
+            width: 288px;
+            height: 320px;
+
+            &:after {
+                width: 288px;
+                height: 288px;
+            }
+        }
+
+        &__img {
+            width: 220px;
+        }
+    }
+}

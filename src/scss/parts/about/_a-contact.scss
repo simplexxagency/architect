@@ -1,0 +1,52 @@
+.a-contact {
+
+    .contact {
+
+        &__contact {
+            margin-bottom: 115px;
+        }
+
+        &__subtitle {
+            margin-bottom: 1px;
+            
+        }        
+    }
+
+    &__subtitle {
+        margin-bottom: 38px;
+    }
+
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .a-contact {
+
+        .contact {
+
+            &__contact {
+                margin-bottom: 50px;
+            }
+
+            &__subtitle {
+                margin-bottom: 16px;
+            }
+
+            &__instagram {
+                margin-bottom: 0;
+            }
+        }
+
+        .footer {
+            padding: 30px 0;
+
+            &__agency {
+                padding-bottom: 0;
+            }
+        }
+        
+    }
+}

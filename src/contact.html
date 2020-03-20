@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www/w3/org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Architect</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.min.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <!-- Fullpage.js -->
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header nav-fixed ">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row row-visible">
+                    <div class="header__container">
+                        <div class="header__lang d-none d-md-block">
+                            <div class="header__lang-ru active">ру
+                                <span class="header__lang-tooltip">eng</span>
+                            </div>
+                            <div class="header__lang-eng">eng
+                                <span class="header__lang-tooltip">ru</span>
+                            </div>
+                        </div>
+                        <div class="header__logo">
+                            <img src="img/Logo.svg" alt="logo">
+                        </div>
+                        <div class="header__menu-btn">
+                            <span class="d-none d-sm-block">Меню</span>
+                            <span class="passive">Свернуть</span>
+                            <div class="header__menu-icon">
+                                <div class="header__menu-line"></div>
+                                <div class="header__menu-line"></div>
+                                <div class="header__menu-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row row-collapsed">
+
+                    <ul class="header__menu-list">
+                        <li class="header__lang-mobile d-flex d-md-none">
+                            <div class="header__lang-item">
+                                <a href="#">рус</a>
+                            </div>
+                            <div class="header__lang-item">
+                                <a href="#">Eng</a>
+                            </div>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Проекты</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Блог</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="header__menu-item header__menu-media d-flex d-md-none">
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Pinterest</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main>
+
+        <!-- Contact -->
+        <section class="cont">
+            <div class="container">
+                <div class="cont__container">
+                    <div class="cont__title title">
+                        Контакты
+                    </div>
+                    <div class="cont__box">
+                        <div class="cont__contact">
+                            <div class="cont__contact-img">
+                                <img src="img/main-img-1.jpg" alt="image">
+                            </div>
+                            <div class="cont__contact-wrap">
+                                <div class="cont__contact-left">
+                                    <div class="cont__contact-item">
+                                        <div class="cont__contact-name">
+                                            телефон
+                                        </div>
+                                        <div class="cont__contact-value">
+                                            +7 916 318-31-22
+                                        </div>
+                                    </div>
+                                    <div class="cont__contact-item">
+                                        <div class="cont__contact-name">
+                                            e-mail
+                                        </div>
+                                        <div class="cont__contact-value">
+                                            bastrichev@gmail.com
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cont__contact-right">
+                                    <div class="cont__contact-item">
+                                        <div class="cont__contact-name">
+                                            адрес
+                                        </div>
+                                        <div class="cont__contact-value">
+                                            Москва, ул. Новинский Бульвар, 10
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="cont__form">
+                            <form action="#" id="validate2">
+                                <div class="cont__form-item">
+                                    <label for="name2" class="cont__form-name">
+                                        Имя
+                                    </label>
+                                    <input type="text" id="name2" name="name2" class='cont__form-value'>
+                                </div>
+                                <div class="cont__form-item">
+                                    <label for="email2" class="cont__form-name">
+                                        E-mail
+                                        <span>
+                                            Ваш e-mail не будет опубликован
+                                        </span>
+                                    </label>
+                                    <input type="email"  id="email2" name="email2" class='cont__form-value email'>
+                                </div>
+                                <div class="cont__form-item">
+                                    <label for="text2" class="cont__form-name">
+                                        Комментарий
+                                    </label>
+                                    <textarea id="text2" name="text2" class="cont__form-textarea cont__form-value">
+
+                                    </textarea>
+                                </div>
+                                <div class="cont__form-button">
+                                    <input type="submit" value="Написать нам">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="cont__map" id="contactMap"></div>
+        </section>
+        <!-- End Contact -->
+    </main>
+
+    <!-- Instagram -->
+    <div class="contact__instagram">
+        <div class="a-contact__subtitle subtitle">
+            <span class="d-none d-sm-block">
+                Следите за нами в Instagram
+            </span>
+            <span class="d-block d-sm-none">Мы в instagram</span>
+
+        </div>
+        <div class="contact__images row">
+            <div class="contact__img col-4 col-sm">
+                <a href="#">
+                    <img src="img/main-img-4.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+
+            </div>
+            <div class="contact__img col-4 col-sm">
+                <a href="#">
+                    <img src="img/main-img-10.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm">
+                <a href="#">
+                    <img src="img/main-img-5.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm">
+                <a href="#">
+                    <img src="img/main-img-6.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm">
+                <a href="#">
+                    <img src="img/main-img-7.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm">
+                <a href="#">
+                    <img src="img/main-img-8.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm-auto d-block d-sm-none">
+                <a href="#">
+                    <img src="img/main-img-8.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm-auto d-block d-sm-none">
+                <a href="#">
+                    <img src="img/main-img-8.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+            <div class="contact__img col-4 col-sm-auto d-block d-sm-none">
+                <a href="#">
+                    <img src="img/main-img-8.jpg" alt="image">
+                    <span>
+                        <img src="img/insta.png" alt="image">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Instagram -->
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer__rights">
+            <div class="footer__subtitle">
+                Bastrichev Architects
+            </div>
+            <div class="footer__copyrights">
+                &#169 Все права защищены 2018
+            </div>
+        </div>
+        <div class="footer__links d-none d-md-flex">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="subtitle">Facebook</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="subtitle">Instagram</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="subtitle">Pinterest</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__agency">
+            <span>Сайт разработан</span>
+
+            <span>KRAB Marketing Agency</span>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Popup Form -->
+    <div class="popup__form popup passive">
+        <div class="popup__shadow">
+
+        </div>
+        <div class="popup__form-main">
+            <form action="" id="validate1">
+                <div class="popup__form-name">
+                    <label for="name1">Имя</label>
+                    <input type="text" name="name1" id="name1">
+                </div>
+                <div class="popup__form-email">
+                    <div class="popup__email-head">
+                        <label for="email1">
+                            E-mail
+                        </label>
+                        <div class="popup__email-text">
+                            Ваш e-mail не будет опубликован
+                        </div>
+                    </div>
+                    <input type="email" name="email1" id="email1">
+                </div>
+                <div class="popup__form-textarea">
+                    <label for="text1">
+                        Комментарий
+                    </label>
+                    <textarea name="text1" id="text1">
+
+                        </textarea>
+                </div>
+                <div class="popup__form-submit">
+                    <input type="submit" value="отправить">
+                </div>
+            </form>
+            <div class="popup__close">
+                <img src="img/popup-icon-close.svg" alt="icon">
+            </div>
+        </div>
+
+    </div>
+    <!-- End Popup Form -->
+
+    <!-- Popup Thank -->
+    <div class="popup__thank popup passive">
+        <div class="popup__shadow">
+
+        </div>
+        <div class="popup__thank-main">
+            <div class="popup__thank-title">
+                Спасибо! Ваша заявка принята
+            </div>
+            <div class="popup__thank-subtitle">
+                Мы свяжемся с вами в течение 15 минут
+            </div>
+            <div class="popup__close">
+                <img src="img/popup-icon-close.svg" alt="icon">
+            </div>
+        </div>
+    </div>
+    <!-- End Popup Thank -->
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <!-- Jquery Validate -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+
+    <!-- Fullpage.js -->
+    <script src="js/jquery.fullpage.min.js"></script>
+
+    <!-- Slick slider -->
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4R9PQyMDROizmuglGKqxCnsFl62st7pM"></script>
+
+    <script>
+        // Initialize Google map page Contact
+        function initMap() {
+            var map;
+            var mapConteiner = $('#contactMap')[0];
+            var mapCenter = { lat: 55.753345,   lng: 37.585361, };
+            map = new google.maps.Map(mapConteiner, {
+                center: mapCenter,
+                zoom: 17,
+                styles: [
+                    {
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f5f5f5"
+                            }
+                        ]
+                    },
+                    // {
+                    //     "elementType": "labels.icon",
+                    //     "stylers": [
+                    //         {
+                    //             "visibility": "off"
+                    //         }
+                    //     ]
+                    // },
+                    {
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#616161"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#f5f5f5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.land_parcel",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#bdbdbd"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#eeeeee"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#757575"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#e5e5e5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#9e9e9e"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#757575"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#dadada"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#616161"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#9e9e9e"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.line",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#e5e5e5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.station",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#eeeeee"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#c9c9c9"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#9e9e9e"
+                            }
+                        ]
+                    }
+                ]
+            });
+
+            var popupContent = '<div class="contact__map-popup">Новинский бульвар, 10</div>'
+            var image = '';
+            var marker = new google.maps.Marker({
+                position: { lat: 55.753349,  lng: 37.585361 },
+                map: map,
+                title: 'Новинский бульвар, 10',
+                icon: image
+            });
+
+            var infowindow = new google.maps.InfoWindow({
+                content: popupContent
+            });
+
+            // marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            // });
+
+        };
+
+        initMap();
+    </script>
+
+</body>
+
+</html>

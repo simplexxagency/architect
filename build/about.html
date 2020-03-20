@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www/w3/org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Architect</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.min.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <!-- Fullpage.js -->
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header nav-fixed ">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row row-visible">
+                    <div class="header__container">
+                        <div class="header__lang d-none d-md-block">
+                            <div class="header__lang-ru active">ру
+                                <span class="header__lang-tooltip">eng</span>
+                            </div>
+                            <div class="header__lang-eng">eng
+                                <span class="header__lang-tooltip">ru</span>
+                            </div>
+                        </div>
+                        <div class="header__logo">
+                            <img src="img/Logo.svg" alt="logo">
+                        </div>
+                        <div class="header__menu-btn">
+                            <span class="d-none d-sm-block">Меню</span>
+                            <span class="passive">Свернуть</span>
+                            <div class="header__menu-icon">
+                                <div class="header__menu-line"></div>
+                                <div class="header__menu-line"></div>
+                                <div class="header__menu-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row row-collapsed">
+
+                    <ul class="header__menu-list">
+                        <li class="header__lang-mobile d-flex d-md-none">
+                            <div class="header__lang-item">
+                                <a href="#">рус</a>
+                            </div>
+                            <div class="header__lang-item">
+                                <a href="#">Eng</a>
+                            </div>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Проекты</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Блог</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="header__menu-item header__menu-media d-flex d-md-none">
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Pinterest</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- About Hero -->
+    <section class="a-hero" id="a-hero">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="a-hero__container">
+                    <div class="a-hero__img">
+                        <img src="img/about-bg-1.jpg" alt="image">
+                    </div>
+                    <!-- Pagination -->
+                    <!-- <ul class="pagination a-pagination" id="menu">
+                        <li data-menuanchor='hero' class="active">
+                            <a href="#a-hero">
+                                <span class="hover-text">О нас</span>
+                            </a>
+                        </li>
+                        <li data-menuanchor='desc'>
+                            <a href="#a-desc">
+                                <span class="hover-text">О нас</span>
+                            </a>
+                        </li>
+                        <li data-menuanchor='company'>
+                            <a href="#a-services">
+                                <span class="hover-text">О нас</span>
+                            </a>
+                        </li>
+                        <li data-menuanchor='project' id='projectli'>
+                            <a href="#a-example">
+                                <span class="hover-text">Проекты</span>
+                            </a>
+                        </li>
+                        <li data-menuanchor='blog'>
+                            <a href="#a-concept">
+                                <span class="hover-text">Концепция</span>
+                            </a>
+                        </li>
+                        <li data-menuanchor='contact'>
+                            <a href="#a-control">
+                                <span class="hover-text">Контроль</span>
+                            </a>
+                        </li>
+                        <li data-menuanchor='blog'>
+                            <a href="#a-knowing">
+                                <span class="hover-text">Знакомство</span>
+                            </a>
+                        </li>
+                        <li data-menuanchor='contact'>
+                            <a href="#a-contact">
+                                <span class="hover-text">Контакты</span>
+                            </a>
+                        </li>
+                    </ul> -->
+                    <!-- End Pagination -->
+                </div>
+                <div class="a-hero__desc">
+                    <div class="a-hero__subtitle subtitle">
+                        Bastrichev Architects
+                    </div>
+                    <div class="a-hero__title title">
+                        Компания с большим наследием
+                    </div>
+                    <div class="a-hero__text text">
+                        <span>BASTRICHEV Architects – компания с большим наследием и безупречной репутацией.</span>
+                        
+                        <span>Высокий профессионализм команды позволил расширить географию выполненных объектов от Ближнего Востока до
+                                Западной Европы.</span>
+                        
+                            <span> Семейные ценности и безупречный вкус сопровождают работу компании на протяжении 30 лет.</span>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Hero -->
+
+    <!-- About Description -->
+    <section class="a-desc" id="a-desc">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="a-desc__desc">
+                        <div class="a-desc__img-top d-block d-lg-none">
+                            <img src="img/about-img-2.jpg" alt="image">
+                        </div>
+                        <div class="a-desc__subtitle subtitle d-block d-lg-none">
+                                30 лет опыта
+                            </div>
+                        <div class="a-desc__title title order-2 order-lg-1">
+                            Репутация
+                        </div>
+                        <div class="a-desc__subtitle subtitle d-none d-lg-block">
+                            30 лет опыта
+                        </div>
+                        <div class="a-desc__text text order-3">
+                            <p>
+                                Самое главное для BASTRICHEV Architects — безупречная репутация, наработанная на
+                                протяжении 30 лет.</p>
+                            <p>
+                                Ценности компании полностью совпадают с запросами наших престижных клиентов самого
+                                высокого уровня.
+                            </p>
+
+                            <p>
+                                Внимание к деталям, безукоризненное соблюдение договоренностей и чувство стиля помогают
+                                нам работать с клиентами на протяжении многих лет.
+                            </p>
+                        </div>
+                        <div class="a-desc__img">
+                            <img src="img/about-img-1.jpg" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="a-desc__img-second">
+                        <img src="img/about-img-2.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Description -->
+
+    <!-- About Services -->
+    <section class="a-services" id="a-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-column align-items-center">
+                    <div class="a-services__container">
+                        <div class="a-services__subtitle subtitle">
+                            На страже вашей идеи
+                        </div>
+                        <div class="a-services__title title">
+                            Широкий спектр услуг
+                        </div>
+                        <div class="a-services__text text">
+                            <p>
+                                Своей деятельностью мы охватываем широкий спектр услуг необходимый для реализации всех
+                                ваших идей.
+                                С нами вы приобретаете команду профессионалов в области проектирования, комплектации и
+                                строительства.
+                            </p>
+                            <p>
+                                Профессионализм и гибкость команды Bastrichev Architects позволил работать над проектами
+                                во Франции,
+                                Швейцарии, Германии, Монако, ОАЭ, Австрии, Венгрии, Украины и России.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services -->
+
+    <!-- Example -->
+    <section class="a-example" id="a-example">
+        <div class="container-fluid">
+            <div class="a-example__container">
+                <div class="a-example__item a-example__item-top">
+                    <div class="a-example__img">
+                        <img src="img/about-img-3.jpg" alt="image">
+                    </div>
+                    <div class="a-example__img d-block d-lg-none">
+                        <img src="img/about-img-5-1.jpg" alt="image">
+                    </div>
+                </div>
+                <div class="a-example__item">
+                    <div class="a-example__img a-example__img-top">
+                        <img src="img/about-img-4.jpg" alt="image">
+                    </div>
+                    <div class="a-example__img d-none d-lg-block">
+                        <img src="img/about-img-5.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Example -->
+
+    <!-- About Concept -->
+    <section class="a-concept" id="a-concept">
+        <div class="container">
+            <div class="a-concept__container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="a-concept__subtitle subtitle">
+                            Магия концепции
+                        </div>
+                        <div class="a-concept__title title d-none d-lg-block">
+                            <span>
+                                Все начинается с идеи и листа чистой бумаги.
+                            </span>
+                            <span>
+                                Эскизы и материалы превращаются в концепцию
+                            </span>
+
+                        </div>
+                        <div class="a-concept__title title d-block d-lg-none">
+                            <span>Всё начинается с чистого листа бумаги</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="a-concept__box">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="a-concept__img a-concept__img-top">
+                            <img src="img/about-img-6.jpg" alt="image">
+                        </div>
+                        <div class="a-concept__text text">
+                            <p><span>Э</span>скизы, силуэты, стили и материалы превращаются в концепцию. Вы видите как
+                                подъезжаете к центральному входу дома, слышите как заходите в звонкий холл, затем
+                                перемещаетесь в просторную и светлую гостиную, из неё переходите в мягкую и тихую
+                                спальню…</p>
+                            <p>Все ощущения и визуальные образы превращаются в документ.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="a-concept__img a-concept__img-big d-none d-md-block">
+                            <img src="img/about-img-7.jpg" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="a-concept__wrap">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-4">
+                        <div class="a-concept__video">
+                            <a href="https://www.youtube.com/watch?v=SUDSr8EVxUM" data-fancybox="">
+                                <div class="a-concept__img">
+                                    <img src="img/about-img-8.jpg" alt="image">
+                                </div>
+                                <div class="a-concept__video-button video-button"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-md-block">
+                        <div class="a-concept__video">
+                            <a href="https://www.youtube.com/watch?v=3HEYu2NHwGs" data-fancybox="">
+                                <div class="a-concept__img">
+                                    <img src="img/about-img-8.jpg" alt="image">
+                                </div>
+                                <div class="a-concept__video-button video-button"></div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="a-concept__desc">
+                            <div class="a-concept__text a-concept__text-bottom text">
+                                <p><span>В</span>се идеи и ваши пожелания мы упаковываем в идеальные пропорции и
+                                    уравновешенную композицию. Когда мы соединяем множество элементов в гармоничное
+                                    целое, мы не признаем компромиссов.</p>
+                                    <p>Проект разрабатывается от общей концепции до
+                                            деталей в масштабе 1:1.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Concept -->
+
+    <!-- About Control -->
+    <section class="a-control" id="a-control">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="a-control__wrap">
+                        <div class="a-control__text text">
+                            <p><span>Н</span>а протяжении реализации проекта наши специалисты контролируют
+                                производителей оборудования и материалов на всех этапах производства. Мы работаем
+                                напрямую с компаниями производителями камня, паркета, гипса и мебели тем самым
+                                обеспечиваем быстрое и качественное выполнение реализации объекта. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="a-control__video">
+                        <a href="https://www.youtube.com/watch?v=3HEYu2NHwGs" data-fancybox="">
+                            <div class="a-control__img">
+                                <img src="img/about-img-9.jpg" alt="image">
+                            </div>
+                            <div class="a-control__video-button video-button"></div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="a-control__video">
+                        <a href="https://www.youtube.com/watch?v=3HEYu2NHwGs" data-fancybox="">
+                            <div class="a-control__img">
+                                <img src="img/about-img-9.jpg" alt="image">
+                            </div>
+                            <div class="a-control__video-button video-button"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="a-control__video">
+                        <a href="https://www.youtube.com/watch?v=3HEYu2NHwGs" data-fancybox="">
+                            <div class="a-control__img">
+                                <img src="img/about-img-9.jpg" alt="image">
+                            </div>
+                            <div class="a-control__video-button video-button"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Control -->
+
+    <!-- About Manager -->
+    <section class="a-manager" id="a-manager">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="a-manager__wrap">
+                        <div class="a-manager__text text">
+                            <p>
+                                <span>О</span>пытные менеджеры проектов организовывают выполнение строительных работ на
+                                самом высоком уровне где бескомпромиссное качество прослеживается в каждой детали.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="a-manager__box">
+                        <div class="a-manager__video">
+                            <a href="https://www.youtube.com/watch?v=3HEYu2NHwGs" data-fancybox="">
+                                <div class="a-manager__img">
+                                    <img src="img/about-bg-2.jpg" alt="image">
+
+                                </div>
+                                <div class="a-manager__video-button video-button">
+
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Manager -->
+
+    <!-- About Adventure -->
+    <section class="a-adventure" id="a-adventure">
+        <div class="container">
+            <div class="a-adventure__container">
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-4">
+                        <div class="a-adventure__title title">
+                            Готовы к увлекательному приключению?
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="a-adventure__wrap">
+                            <div class="a-adventure__text text">
+                                <p><span>М</span>ы наполняем создание интерьера приятными впечатлениями. Вас ожидает
+                                    удовольствие от того, что мы понимаем Вас с полуслова, даже когда Вам трудно
+                                    выразить свою идею словами. Вы увидите, как набросок и отдельные картинки
+                                    складываются в эскиз, который вскоре обретает объем и цвет. И вот Вы держите в руках
+                                    большие фотографии будущего интерьера, в котором Вам нравится все.
+                                </p>
+                                <div class="a-adventure__box d-md-block">
+                                        <p class="passive">
+                                                Вы уверены, что получили лучшие материалы по лучшей цене. Вы видите план проекта.
+                                                Вам понятно, когда строительные работы будут завершены, когда будет готова отделка и
+                                                смонтируют оборудование. Каждый раз, приезжая на объект, Вам бросается в глаза
+                                                качество исполнения даже мелких деталей. Рабочие деловиты и всегда заняты. Вы
+                                                наслаждаетесь чувством, что Вам достались первоклассные мастера.
+            
+                                            </p>
+                                            <p class="passive">
+                                                Вы уверены, что получили лучшие материалы по лучшей цене. Вы видите план проекта.
+                                                Вам понятно, когда строительные работы будут завершены, когда будет готова отделка и
+                                                смонтируют оборудование. Каждый раз, приезжая на объект, Вам бросается в глаза
+                                                качество исполнения даже мелких деталей. Рабочие деловиты и всегда заняты. Вы
+                                                наслаждаетесь чувством, что Вам достались первоклассные мастера.
+            
+                                            </p>
+                                            <p class="passive">
+                                                Вы уверены, что получили лучшие материалы по лучшей цене. Вы видите план проекта.
+                                                Вам понятно, когда строительные работы будут завершены, когда будет готова отделка и
+                                                смонтируют оборудование. Каждый раз, приезжая на объект, Вам бросается в глаза
+                                                качество исполнения даже мелких деталей. Рабочие деловиты и всегда заняты. Вы
+                                                наслаждаетесь чувством, что Вам достались первоклассные мастера.
+            
+                                            </p>
+                                            <p class="passive">
+                                                Вы уверены, что получили лучшие материалы по лучшей цене. Вы видите план проекта.
+                                                Вам понятно, когда строительные работы будут завершены, когда будет готова отделка и
+                                                смонтируют оборудование. Каждый раз, приезжая на объект, Вам бросается в глаза
+                                                качество исполнения даже мелких деталей. Рабочие деловиты и всегда заняты. Вы
+                                                наслаждаетесь чувством, что Вам достались первоклассные мастера.
+            
+                                            </p>
+                                            <p class="passive">
+                                                Вы уверены, что получили лучшие материалы по лучшей цене. Вы видите план проекта.
+                                                Вам понятно, когда строительные работы будут завершены, когда будет готова отделка и
+                                                смонтируют оборудование. Каждый раз, приезжая на объект, Вам бросается в глаза
+                                                качество исполнения даже мелких деталей. Рабочие деловиты и всегда заняты. Вы
+                                                наслаждаетесь чувством, что Вам достались первоклассные мастера.
+            
+                                            </p>
+                                            <p class="passive">
+                                                Вы уверены, что получили лучшие материалы по лучшей цене. Вы видите план проекта.
+                                                Вам понятно, когда строительные работы будут завершены, когда будет готова отделка и
+                                                смонтируют оборудование. Каждый раз, приезжая на объект, Вам бросается в глаза
+                                                качество исполнения даже мелких деталей. Рабочие деловиты и всегда заняты. Вы
+                                                наслаждаетесь чувством, что Вам достались первоклассные мастера.
+            
+                                            </p>
+                                            <p class="passive">
+                                                Вы уверены, что получили лучшие материалы по лучшей цене. Вы видите план проекта.
+                                                Вам понятно, когда строительные работы будут завершены, когда будет готова отделка и
+                                                смонтируют оборудование. Каждый раз, приезжая на объект, Вам бросается в глаза
+                                                качество исполнения даже мелких деталей. Рабочие деловиты и всегда заняты. Вы
+                                                наслаждаетесь чувством, что Вам достались первоклассные мастера.
+            
+                                            </p>
+                                            <p class="passive">
+                                                Вы уверены, что получили лучшие материалы по лучшей цене. Вы видите план проекта.
+                                                Вам понятно, когда строительные работы будут завершены, когда будет готова отделка и
+                                                смонтируют оборудование. Каждый раз, приезжая на объект, Вам бросается в глаза
+                                                качество исполнения даже мелких деталей. Рабочие деловиты и всегда заняты. Вы
+                                                наслаждаетесь чувством, что Вам достались первоклассные мастера.
+            
+                                            </p>
+                                            <p class="passive">
+                                                Вы уверены, что получили лучшие материалы по лучшей цене. Вы видите план проекта.
+                                                Вам понятно, когда строительные работы будут завершены, когда будет готова отделка и
+                                                смонтируют оборудование. Каждый раз, приезжая на объект, Вам бросается в глаза
+                                                качество исполнения даже мелких деталей. Рабочие деловиты и всегда заняты. Вы
+                                                наслаждаетесь чувством, что Вам достались первоклассные мастера.
+            
+                                            </p>
+                                            <p class="passive">
+                                                Вы уверены, что получили лучшие материалы по лучшей цене. Вы видите план проекта.
+                                                Вам понятно, когда строительные работы будут завершены, когда будет готова отделка и
+                                                смонтируют оборудование. Каждый раз, приезжая на объект, Вам бросается в глаза
+                                                качество исполнения даже мелких деталей. Рабочие деловиты и всегда заняты. Вы
+                                                наслаждаетесь чувством, что Вам достались первоклассные мастера.
+            
+                                            </p>
+                                </div>
+                                
+                                <div class="button a-adventure__button d-block d-md-none">
+                                        <a href="javascropt:void(0)" >
+                                                Читать полностью
+                                            </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="a-adventure__video">
+                        <a href="https://www.youtube.com/watch?v=3HEYu2NHwGs" data-fancybox="">
+                            <div class="a-adventure__img">
+                                <img src="img/about-img-10.jpg" alt="">
+                            </div>
+                            <div class="a-adventure__video-button video-button">
+
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End About Adventure -->
+
+    <!-- About Progress -->
+    <section class="a-progress" id="a-progress">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="a-progress__container">
+                        <div class="a-progress__title title">
+                            Наши достижения
+                        </div>
+                        <div class="a-progress__text text">
+                            <p><span>С</span>амое большое достижение – это люди, которые обращаются к нам снова и снова.
+                                Каждый новый клиент оценивает наш профессионализм, а старый - подтверждает. Это говорит
+                                о том, что наши ценности и подход к работе совпадают с ожиданиями самых требовательных
+                                клиентов.
+                            </p>
+                            <p>
+                                Интерьер компании Bastrichev Architects удостоился быть напечатанным в юбилейном
+                                издании книги <a href="#"> «Лучшие классические интерьеры…».</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="a-progress__wrap">
+                        <div class="a-progress__ring">
+                            <div class="a-progress__img">
+                                <img src="img/about-img-11.jpg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Progress -->
+
+    <!-- About Knowing -->
+    <section class="a-knowing" id="a-knowing">
+        <div class="a-knowing__img">
+            <img src="img/about-bg-3.jpg" alt="image">
+        </div>
+        <!-- <div class="a-knowing__wrap">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 offset-lg-7 col-12"> -->
+        <div class="a-knowing__container">
+            <div class="a-knowing__title title">
+                <span>Начните знакомство с нами</span>
+                <span>с полезной беседы</span>
+                <span>за чашкой хорошего кофе</span>
+            </div>
+            <div class="a-knowing__button button">
+                <a href="#">Оставить заявку</a>
+            </div>
+        </div>
+        <!-- </div>
+                        </div>
+                    </div> -->
+        <!-- </div> -->
+
+    </section>
+    <!-- End About Knowing -->
+
+    <!-- Contact-->
+    <section class="contact a-contact" id="a-contact">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="contact__content">
+                        <div class="contact__contact">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="contact__contact-item">
+                                        <div class="contact__subtitle subtitle">
+                                            Телефон
+                                        </div>
+                                        <div class="contact__title title">
+                                            +7 916 318-31-22
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="contact__contact-item">
+                                        <div class="contact__subtitle subtitle">
+                                            Адрес
+                                        </div>
+                                        <div class="contact__title title">
+                                            Москва, ул. Новинский Бульвар, 10
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="contact__contact-item">
+                                        <div class="contact__subtitle subtitle">
+                                            E-mail
+                                        </div>
+                                        <div class="contact__title title">
+                                            <a href="mailto:bastrichev@gmail.com">bastrichev@gmail.com</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Instagram -->
+                        <div class="contact__instagram">
+                            <div class="a-contact__subtitle subtitle">
+                                <span class="d-none d-sm-block">
+                                    Следите за нами в Instagram
+                                </span>
+                                <span class="d-block d-sm-none">Мы в instagram</span>
+
+                            </div>
+                            <div class="contact__images row">
+                                <div class="contact__img col-4 col-sm">
+                                    <a href="#">
+                                        <img src="img/main-img-4.jpg" alt="image">
+                                        <span>
+                                            <img src="img/insta.png" alt="image">
+                                        </span>
+                                    </a>
+
+                                </div>
+                                <div class="contact__img col-4 col-sm">
+                                    <a href="#">
+                                        <img src="img/main-img-10.jpg" alt="image">
+                                        <span>
+                                            <img src="img/insta.png" alt="image">
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="contact__img col-4 col-sm">
+                                    <a href="#">
+                                        <img src="img/main-img-5.jpg" alt="image">
+                                        <span>
+                                            <img src="img/insta.png" alt="image">
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="contact__img col-4 col-sm">
+                                    <a href="#">
+                                        <img src="img/main-img-6.jpg" alt="image">
+                                        <span>
+                                            <img src="img/insta.png" alt="image">
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="contact__img col-4 col-sm">
+                                    <a href="#">
+                                        <img src="img/main-img-7.jpg" alt="image">
+                                        <span>
+                                            <img src="img/insta.png" alt="image">
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="contact__img col-4 col-sm">
+                                    <a href="#">
+                                        <img src="img/main-img-8.jpg" alt="image">
+                                        <span>
+                                            <img src="img/insta.png" alt="image">
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="contact__img col-4 col-sm-auto d-block d-sm-none">
+                                    <a href="#">
+                                        <img src="img/main-img-8.jpg" alt="image">
+                                        <span>
+                                            <img src="img/insta.png" alt="image">
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="contact__img col-4 col-sm-auto d-block d-sm-none">
+                                    <a href="#">
+                                        <img src="img/main-img-8.jpg" alt="image">
+                                        <span>
+                                            <img src="img/insta.png" alt="image">
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="contact__img col-4 col-sm-auto d-block d-sm-none">
+                                    <a href="#">
+                                        <img src="img/main-img-8.jpg" alt="image">
+                                        <span>
+                                            <img src="img/insta.png" alt="image">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Instagram -->
+
+                        <!-- Footer -->
+                        <footer class="footer">
+
+                            <div class="footer__rights">
+                                <div class="footer__subtitle">
+                                    Bastrichev Architects
+                                </div>
+                                <div class="footer__copyrights">
+                                    &#169 Все права защищены 2018
+                                </div>
+                            </div>
+                            <div class="footer__links d-none d-md-flex">
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#" class="subtitle">Facebook</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="subtitle">Instagram</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="subtitle">Pinterest</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__agency">
+                                <span>Сайт разработан</span>
+
+                                <span>KRAB Marketing Agency</span>
+                            </div>
+
+                        </footer>
+                        <!-- End Footer -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End contact -->
+
+    <!-- Popup Form -->
+    <div class="popup__form popup passive">
+        <div class="popup__shadow">
+
+        </div>
+        <div class="popup__form-main">
+            <form action="" id="validate1">
+                <div class="popup__form-name">
+                    <label for="name1">Имя</label>
+                    <input type="text" name="name1" id="name1">
+                </div>
+                <div class="popup__form-email">
+                    <div class="popup__email-head">
+                        <label for="email1">
+                            E-mail
+                        </label>
+                        <div class="popup__email-text">
+                            Ваш e-mail не будет опубликован
+                        </div>
+                    </div>
+                    <input type="email" name="email1" id="email1">
+                </div>
+                <div class="popup__form-textarea">
+                    <label for="text1">
+                        Комментарий
+                    </label>
+                    <textarea name="text1" id="text1">
+
+                    </textarea>
+                </div>
+                <div class="popup__form-submit">
+                    <input type="submit" value="отправить">
+                </div>
+            </form>
+            <div class="popup__close">
+                <img src="img/popup-icon-close.svg" alt="icon">
+            </div>
+        </div>
+
+    </div>
+    <!-- End Popup Form -->
+
+    <!-- Popup Thank -->
+    <div class="popup__thank popup passive">
+        <div class="popup__shadow">
+
+        </div>
+        <div class="popup__thank-main">
+            <div class="popup__thank-title">
+                Спасибо! Ваша заявка принята
+            </div>
+            <div class="popup__thank-subtitle">
+                Мы свяжемся с вами в течение 15 минут
+            </div>
+            <div class="popup__close">
+                <img src="img/popup-icon-close.svg" alt="icon">
+            </div>
+        </div>
+    </div>
+    <!-- End Popup Thank -->
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <!-- Jquery Validate -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+
+    <!-- Fullpage.js -->
+    <script src="js/jquery.fullpage.min.js"></script>
+
+    <!-- Slick slider -->
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

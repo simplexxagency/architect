@@ -1,0 +1,19 @@
+.a-hero {
+  position: relative;
+  padding-top: 60px;
+  margin-bottom: 170px; }
+  .a-hero__desc {
+    width: 450px;
+    position: absolute;
+    bottom: 30px;
+    right: 50px; }
+  .a-hero__text {
+    text-align: justify; }
+  .a-hero__subtitle {
+    text-align: right; }
+  .a-hero__title {
+    font-size: 30px;
+    color: #fff;
+    white-space: nowrap; }
+  .a-hero__text {
+    color: #fff; }

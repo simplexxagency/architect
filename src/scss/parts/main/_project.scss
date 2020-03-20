@@ -1,0 +1,215 @@
+.project {
+    // padding-top: 60px;
+
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__slider {
+        position: relative;
+        z-index: 9;
+        
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 38px;
+        right: 120px;
+        display: flex;
+        width: 120px;
+
+        li button {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #838181;
+
+            &:before {
+                content: '';
+            }
+
+            &:hover {
+                background-color: $color-white;
+            }
+        }
+
+        li.slick-active button {
+            background-color: $color-white;
+        }
+    }
+
+
+
+    &__arrowleft,
+    &__arrowright {
+        position: absolute;
+        z-index: 11;
+        transition: all ease 1s;
+
+    }
+
+    &__arrowleft {
+        top: 50%;
+        left: 20px;
+        
+
+        &:hover {
+            transform: translateX(-5px);
+        }
+    }
+
+    &__arrowright {
+        top: 50%;
+        right: 20px;
+
+        &:hover {
+            transform: translateX(5px);
+        }
+    }
+
+    &__card {
+        position: relative;
+    }
+    
+    &__desc {
+        position: absolute;
+        bottom: 27px;
+        left: 127px;
+        z-index: 11;
+        color: $color-white;
+    }
+
+    &__title {
+        margin-bottom: 6px;
+        color: $color-white;
+    }
+
+    &__subtitle {
+        color: $color-white;
+    }
+
+    &__img {
+        position: relative;
+
+        img {
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        &:before {
+            content: '';
+            width: 100%;
+            // height: 100%;
+            height: 800px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80.21%, rgba(0, 0, 0, 0.8) 100%);
+        }
+    }
+
+    &__button {
+
+        a {
+            padding: 17px 67px;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .project {
+        margin-bottom: 34px;
+
+        &__img {
+    
+            &:before {
+                height: 500px;
+               
+            }
+
+            img {
+                height: 100vh;
+                object-fit: cover;
+            }
+        }
+
+        .slick-dots {
+            right: 80px;
+        }
+
+        &__desc {
+            left: 100px;
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .project {
+
+        .slick-dots {
+            right: 80px;
+        }
+
+        &__desc {
+            left: 100px;
+        }
+
+        &__title {
+            font-size: 22px;
+        }
+    }
+
+}
+
+@media all and (max-width: 575px) {
+    .project {
+        padding-top: 0;
+        margin-bottom: 64px;
+
+        &__slider {
+            margin-bottom: 40px;
+        }
+
+        &__desc {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        &__title {
+            font-family: $play-font;
+            font-size: 20px;
+            line-height: 27px;
+            padding-bottom: 1px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+
+            &-top {
+                margin-bottom: 32px;
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+
+        &__item:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &__img {
+            position: relative;
+            // margin-right: -15px;
+            // margin-left: -15px;
+
+            
+
+            img {
+                height: 100vh;
+                object-fit: cover;
+            }
+        }
+
+        &__button {
+            text-align: center;
+        }
+    }
+}

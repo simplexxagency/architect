@@ -1,0 +1,102 @@
+.pagination {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    height: 90px;
+    margin: auto;
+    font-size: 1.2em;
+    z-index: 8;
+
+    li {
+        margin-bottom: 23px;
+
+        &:hover span {
+            opacity: 1;
+            text-transform: uppercase;
+        }
+
+        &.active {
+
+            a:after {
+                right: 3px;
+                width: 3px;
+                background-color: $color-brown;
+            }
+
+            span {
+                // opacity: 1;
+                text-transform: uppercase;
+                animation: 2s ease fadeout;
+            }
+        }
+    }
+
+    @keyframes fadeout {
+        0% { opacity: 1;}
+        50% { opacity: 1;}
+        100% { opacity: 0;}
+    }
+
+    a {
+        display: block;
+        width: 80px;
+        height: 13px;
+        border-radius: 50%;
+        color: $color-main;
+        position: relative;
+        padding: 4px;
+
+        span {
+            position: absolute;
+            right: 20px;
+            top: -5px;
+            opacity: 0;
+            text-transform: uppercase;
+            transition: opacity 0.5s ease;
+        }
+
+        &:after {
+            width: 1px;
+            height: 23px;
+            display: block;
+            background: #a4a4a4;
+            content: '';
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 4px;
+            bottom: 0;
+            
+        }
+
+         
+    }
+
+}
+
+.a-pagination {
+    position: absolute;
+    right: 28px;
+
+    li.active {
+
+        a {
+            color: $color-white;
+        }
+
+        a:after {
+            right: 3px;
+            width: 3px;
+            background-color: $color-white;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .pagination {
+        display: none;
+    }
+}

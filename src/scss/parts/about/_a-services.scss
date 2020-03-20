@@ -1,0 +1,43 @@
+.a-services {
+    margin-bottom: 175px;
+
+    &__container {
+        width: 815px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 6px;
+    }
+
+    &__title {
+        margin-bottom: 29px;
+    }
+
+    &__text {
+
+        p {
+            text-align: justify;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .a-services {
+        margin-bottom: 70px;
+
+        &__container {
+            width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 575px) {
+    .a-services {
+        margin-bottom: 40px;
+    }
+}

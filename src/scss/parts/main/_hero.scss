@@ -1,0 +1,47 @@
+.hero {
+    padding-top: 50px;
+
+    &__img {
+        width: 100%;
+
+        img {
+            object-fit: cover;
+            height: 100vh;
+        }
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .hero {
+
+        &__img {
+
+            img {
+                object-fit: cover;
+                height: 100vh;
+            }
+            
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .hero {
+        padding-top: 0;
+        margin-bottom: 60px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .hero {
+        
+
+        &__img {
+
+            img {
+                height: 100vh;
+                object-fit: cover;
+            }
+        }
+    }
+}

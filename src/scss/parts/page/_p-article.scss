@@ -1,0 +1,294 @@
+.p-article {
+
+    &__header {
+        margin-bottom: 65px;
+        padding-bottom: 41px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__account {
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+    }
+
+    &__ava {
+        width: 64px;
+        margin-right: 12px;
+    }
+
+    &__name {
+        font-family: $play-font;
+        color: $color-black;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    &__time {
+        display: flex;
+        align-items: center;
+
+        &-img {
+            width: 20px;
+            margin-right: 9px;
+        }
+
+        &-desc {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__button {
+
+        a {
+            padding: 16px 38px;
+            letter-spacing: 0.15em;
+        }
+    }
+
+    &__main {
+        width: 730px;
+        margin: 0 auto;
+    }
+
+    &__text {
+        margin-bottom: 64px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+
+        p:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__img {
+        margin-bottom: 64px;
+    }
+
+    &__quotes {
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        &-wrap {
+            margin-bottom: 63px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px;
+            background: #F7F9FB;
+        }
+        
+
+        &-img {
+            margin-bottom: 40px;
+        }
+
+        &-text {
+            margin-bottom: 40px;
+            font-family: $play-font, serif;
+            font-style: italic;
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        
+    }
+
+    &__author {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        margin: 0 auto 65px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__container {
+        width: 730px;
+        margin: 0 auto;
+
+        .p-article__text {
+
+            &:last-child {
+                margin-bottom: 127px;
+            }
+        }
+    }
+
+    &__footer {
+        margin-bottom: 130px;
+    }
+
+    &__credit {
+        width: 540px;
+        margin: 0 auto 40px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        a {
+            display: inline-block;
+            width: 30px;
+
+            &:hover {
+
+                img {
+                    filter: brightness(0) saturate(100%) invert(49%) sepia(9%) saturate(1355%) hue-rotate(353deg) brightness(91%) contrast(84%);
+                }
+            }
+        }
+    }
+}
+
+.p-blog {
+    margin-bottom: 60px;
+
+    &__button {
+
+        a {
+            padding: 17px 87px;
+        }
+        
+    }
+}
+
+.p-contact {
+
+    &__instagram {
+        margin-bottom: 0;
+    }
+
+    &__title {
+        padding: 64px 0 37px;
+        background: #F7F9FB;
+        
+    }
+
+    &__images {
+        background: #F7F9FB;
+    }
+}
+
+.contact__instagram .p-contact__title {
+    margin-bottom: 0;
+}
+
+.p-footer {
+    padding-top: 40px;
+}
+
+@media all and (max-width: 991px) {
+    .p-article {
+
+        &__main {
+            width: 100%;
+            margin: 0;
+        }
+
+        &__container {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .p-article {
+
+        &__header {
+           flex-direction: column;
+           flex-wrap: wrap;
+        }
+
+        &__box {
+            margin-bottom: 30px;
+        }
+
+        &__quotes {
+
+            &-wrap {
+                padding: 80px 15px;
+            }
+        }
+
+        &__container {
+    
+            .p-article__text {
+    
+                &:last-child {
+                    margin-bottom: 70px;
+                }
+            }
+        }
+
+        &__credit {
+            width: 100%;
+        } 
+    }
+}
+
+@media all and (max-width: 577px) {
+    .p-article {
+
+        &__ava {
+           width: 50px;
+        }
+
+        &__name {
+            font-size: 16px;
+        }
+
+        &__account {
+            margin-right: 30px;
+        }
+
+        &__time {
+
+            &-desc {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 420px) {
+    .p-article {
+
+        &__box {
+            flex-direction: column;
+        }
+
+        &__account {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+}

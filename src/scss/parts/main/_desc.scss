@@ -1,0 +1,122 @@
+.desc {
+    padding-top: 50px;
+
+    .container {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .container-fluid,
+    .container,
+    .row {
+        height: 100%;
+    }
+
+    &__desc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__box {
+        width: 550px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 5px;
+        letter-spacing: 1.8px;
+        color: $color-brown;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        white-space: nowrap;
+    }
+
+    &__text {
+        text-align: justify;
+
+        a {
+            font-family: $ttm-italic;
+            // font-style: italic;
+            padding-bottom: 1px;
+            color: $color-brown;
+            border-bottom: 1px solid #e3ded7;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .desc {
+
+        .container-fluid {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        .row-visible {
+            justify-content: space-between;
+            padding-top: 15px;
+            flex-wrap: wrap;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+@media all and (min-width: 992px) {
+    .desc {
+
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &__title {
+            line-height: 32px;
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .desc {
+        padding-top: 0;
+        margin-bottom: 60px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .desc {
+        
+
+        .container {
+            margin: auto;
+            padding: 0 15px;
+        }
+
+        &__desc {
+            width: auto;
+        }
+
+        &__box {
+            width: auto;
+        }
+
+        &__subtitle {
+            margin-bottom: 16px;
+        }
+
+        &__title {
+            margin-bottom: 32px;
+            white-space: unset;
+        }
+    }
+}

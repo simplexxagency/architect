@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>404</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Fullpage.js -->
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header nav-fixed ">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row row-visible">
+                    <div class="header__container">
+                        <div class="header__lang d-none d-md-block">
+                            <div class="header__lang-ru active">ру
+                                <span class="header__lang-tooltip">eng</span>
+                            </div>
+                            <div class="header__lang-eng">eng
+                                <span class="header__lang-tooltip">ru</span>
+                            </div>
+                        </div>
+                        <div class="header__logo">
+                            <img src="img/Logo.svg" alt="logo">
+                        </div>
+                        <div class="header__menu-btn">
+                            <span class="d-none d-sm-block">Меню</span>
+                            <span class="passive">Свернуть</span>
+                            <div class="header__menu-icon">
+                                <div class="header__menu-line"></div>
+                                <div class="header__menu-line"></div>
+                                <div class="header__menu-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row row-collapsed">
+
+                    <ul class="header__menu-list">
+                        <li class="header__lang-mobile d-flex d-md-none">
+                            <div class="header__lang-item">
+                                <a href="#">рус</a>
+                            </div>
+                            <div class="header__lang-item">
+                                <a href="#">Eng</a>
+                            </div>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Проекты</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Блог</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="header__menu-item header__menu-media d-flex d-md-none">
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Pinterest</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <section class="content content-404 container-fluid flex-body d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row align-items-center h-100">
+                <div class="col-12 col-md-6">
+                    <div class="center-block">
+                        <h2>Запрашиваемая вами страница не найдена или перенесена.</h2> Попробуйте
+                        воспользоваться меню
+                        или <a href="#"><span>перейти на главную</span></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <span><span>404</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        .content-404 {
+            background: #ffffff;
+            padding-top: 30px;
+            padding-bottom: 55px;
+            /*margin-top: 55px;*/
+
+        }
+
+
+        .content-404 h2 {
+            font-family: 'tt_normslight', sans-serif;
+            font-size: 32px;
+            letter-spacing: 0;
+            color: #767676;
+            padding-bottom: 0.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .content-404 h2 {
+                font-family: 'tt_normslight', sans-serif;
+                font-size: 32px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .content-404 h2 {
+                font-family: 'tt_normslight', sans-serif;
+                color: #767676;
+            }
+        }
+
+
+        .content-404 p {
+            font: normal normal 16px/24px 'Playfair Display';
+            letter-spacing: 0;
+            color: #897358;
+            padding-bottom: 25px;
+        }
+
+
+        .content-404 span {
+            display: inline-block;
+            padding-left: 10px;
+        }
+
+        .content-404 a {
+            position: relative;
+            font: normal normal 16px/1 'Proxima Nova Rg';
+            letter-spacing: 0;
+            color: #caaa8f;
+            padding: 0.35rem 0rem 0rem;
+
+        }
+
+        .content-404 a:hover {
+            cursor: pointer;
+            color: #333333;
+            text-decoration: underline;
+        }
+
+
+        .content-404 span span {
+            font: normal normal 8rem/normal 'Playfair Display';
+            letter-spacing: 0;
+            color: #897358;
+            opacity: 0.5;
+            text-shadow: 5px 20px 20px rgba(0, 0, 0, 0.75),
+                -3px 10px 12px rgba(0, 0, 0, 0.25);
+            padding: 0;
+            position: relative;
+            transform: translateX(-20px);
+        }
+
+        @media (min-width: 768px) {
+            .content-404 span span {
+                font: normal normal 10rem/normal 'Playfair Display';
+                padding: 0;
+                position: relative;
+                transform: translateX(0px);
+            }
+        }
+
+        @media (min-width: 992px) {
+            .content-404 span span {
+                font: normal normal 12rem/normal 'Playfair Display';
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .content-404 span span {
+                font: normal normal 15rem/normal 'Playfair Display';
+                color: #897358;
+            }
+        }
+
+        .content-404 {
+            text-align: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+
+        .content-404 .ref {
+            padding-left: 0;
+            color: #897358;
+            font-family: 'tt_normslight', sans-serif;
+        }
+
+        .content-404 .center-block {
+            font-family: 'tt_normslight', sans-serif;
+            color: #767676;
+        }
+
+        .content-404 a {
+            font: normal normal 16px/1.2 'Playfair Display';
+            padding-top: 0;
+        }
+
+        @media (min-width: 768px) {
+            .content-404 {
+                text-align: left;
+            }
+        }
+    </style>
+
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!-- Fullpage.js -->
+    <script src="js/jquery.fullpage.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
